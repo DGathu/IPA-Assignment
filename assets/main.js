@@ -32,7 +32,10 @@ function processUserInfo() {
 
 
 
-    if (ageInt < 27) {
+    if (ageInt < 12) {
+        response += "You are a Gen Alpha.<br>";
+    }
+    else if (ageInt >= 12 && ageInt < 27) {
         response += "You are a Gen Z.<br>";
     }
     else if (ageInt >= 27 && ageInt < 43) {
